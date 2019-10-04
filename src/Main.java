@@ -31,9 +31,9 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Haand spillerensHaand =null;
         String spillerensString = scanner.next();
-        if (spillerensString.equals("sten")) { spillerensHaand = Haand.STEN;}
-        if (spillerensString.equals("saks")) { spillerensHaand = Haand.SAKS;}
-        if (spillerensString.equals("papir")) { spillerensHaand = Haand.PAPIR;}
+        if (spillerensString.equalsIgnoreCase("sten")) { spillerensHaand = Haand.STEN;}
+        if (spillerensString.equalsIgnoreCase("saks")) { spillerensHaand = Haand.SAKS;}
+        if (spillerensString.equalsIgnoreCase("papir")) { spillerensHaand = Haand.PAPIR;}
         System.out.println("Spiller slår " + spillerensHaand);
 
         // sammenligne med slag() metoden
